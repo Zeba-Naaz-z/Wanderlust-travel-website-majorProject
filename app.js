@@ -2,6 +2,8 @@ if(process.env.NODE_ENV != "production") {
    require('dotenv').config();
 }
 
+const port = process.env.PORT || 8080;
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -122,6 +124,6 @@ app.use("/", userRouter);
    //res.status(statusCode).send(message);
  });
 
-app.listen(8080, () => {
-    console.log("server is listening to the port 8080");
+app.listen(port, () => {
+    console.log("server is listening to the port ${port}");
 });
