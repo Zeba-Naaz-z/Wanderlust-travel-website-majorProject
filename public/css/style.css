@@ -1,0 +1,220 @@
+ body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white !important;
+    opacity:1 !important;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.navbar-collapse{
+  background-color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, 
+.f-info-socials,
+.f-info-brand {
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height:8rem;
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 2rem !important;
+    width: 97% !important;
+    object-fit: cover !important;
+    padding: 0 1rem 0 1rem;
+}
+
+.card-body {
+    padding: 1rem !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit page */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show page */
+.show-img {
+height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.search-container{
+  position: relative;
+}
+
+.search-form{
+  display:flex;
+  gap:10px;
+}
+
+#searchInput{
+  width:250px;
+  padding:8px 12px;
+  border-radius:20px;
+  border:1px solid #ccc;
+}
+
+.search-btn{
+  background:#ff385c;
+  border:none;
+  color:white;
+  padding:8px 15px;
+  border-radius:20px;
+}
+
+#suggestions{
+  list-style:none;
+  position:absolute;
+  top:40px;
+  left:0;
+  width:250px;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:10px;
+  z-index:1000;
+}
+
+#suggestions li{
+  padding:10px;
+  cursor:pointer;
+}
+
+#suggestions li:hover{
+  background:#f2f2f2;
+}
+
+/* Search bar styling */
+.search-form input{
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.search-form input:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+ .search-btn {
+    background-color: #fe424d;
+     color: #fff; 
+     border-radius: 25px;
+     padding: 0 1rem 0 1rem;
+   }
+   .search-btn :hover {
+    background-color: #fe424d;
+     color: #fff; 
+   }
+    .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+   }
+
+   .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 10rem 0.5rem 1.5rem;
+    font-size: 0.8;
+   }
