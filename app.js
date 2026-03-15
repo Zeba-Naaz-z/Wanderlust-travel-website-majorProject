@@ -70,9 +70,6 @@ main()
     },
   };
 
-  // app.get("/", (req, res) => {
-  //   res.send("Hi I am root");
-  // });
 
   
 
@@ -112,6 +109,10 @@ main()
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
+
+app.all("*", (req, res) => {
+  res.status(404).send("Page not found");
+});
 
 
  app.all("/*path", (req, res, next) => {
